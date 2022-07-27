@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Formula1-Black";
+  src: url(/src/fonts/Formula1-Black.ttf);
+}
+
+@font-face {
+  font-family: "Formula1-Bold";
+  src: url(/src/fonts/Formula1-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Formula1-Regular";
+  src: url(/src/fonts/Formula1-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Formula1-Wide";
+  src: url(/src/fonts/Formula1-Wide.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&family=Unna&family=Volkhov:ital@1&display=swap");
+
+.all {
+  margin-left: 10em;
+  margin-right: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 250px;
+  margin-top: 0.5em;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-family: "Formula1-Black";
+  font-size: 30px;
+}
+
+.driver-title {
+  border-top: 10px #000000 solid;
+  border-right: 10px #000000 solid;
+  border-top-right-radius: 15px;
+  padding-top: 40px;
+}
+
+.content-info {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  height: 50px;
+}
+
+.page-info {
+  font-family: "Titillium Web";
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
