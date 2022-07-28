@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 
 export default function Card({ racer, index }) {
+  const [score, setScore] = useState(racer.points);
+
+  const handleScoreInc = () => {
+    setScore(score + 1);
+  };
+
   return (
     <>
       <div
@@ -9,9 +15,11 @@ export default function Card({ racer, index }) {
       >
         <div className="general-info line">
           <div className="rank">{index + 1}</div>
-          <button className="btn">+</button>
+          <button className="btn" onClick={handleScoreInc}>
+            +
+          </button>
           <div className="points">
-            <div className="number-points">{racer.points}</div>
+            <div className="number-points">{score}</div>
             <div className="pts">PTS</div>
           </div>
         </div>
