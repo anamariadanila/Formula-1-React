@@ -47,7 +47,6 @@ export default function Card({ racer, index }) {
             <span className="first-name">{racer.firstName}</span>
             <span className="last-name">{racer.lastName}</span>
           </div>
-          {/* <img className="flag" src={racer.flag} alt="flag" /> */}
           <Flag className="flag" code={racer.country} alt="flag" />
         </div>
         <p className="team">{racer.team}</p>
