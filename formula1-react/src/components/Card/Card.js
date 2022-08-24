@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import Flag from "react-world-flags";
 import "./Card.css";
 
-export default function Card({ racer, index }) {
+export default function Card({ racer, index, handleUpdate }) {
   const [score, setScore] = useState(racer.points);
   const [hovered, setHovered] = useState(false);
 
   const handleScoreInc = () => {
     setScore(score + 1);
+    handleUpdate(index, score + 1);
   };
 
   const handleMouseEnter = () => {
@@ -30,12 +31,14 @@ export default function Card({ racer, index }) {
       >
         <div className="general-info line">
           <div className="rank">{index + 1}</div>
-          <button className="btn" onClick={handleScoreInc}>
-            +
-          </button>
-          <div className="points">
-            <div className="number-points">{score}</div>
-            <div className="pts">PTS</div>
+          <div className="points-container">
+            <button className="btn" onClick={handleScoreInc}>
+              +
+            </button>
+            <div className="points">
+              <div className="number-points">{score}</div>
+              <div className="pts">PTS</div>
+            </div>
           </div>
         </div>
         <div className="pilot-info line">

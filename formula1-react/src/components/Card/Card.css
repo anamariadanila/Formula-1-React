@@ -78,6 +78,12 @@
   margin-bottom: 3px;
 }
 
+.points-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .pts {
   background-color: #000;
   border-radius: 3px;
@@ -183,6 +189,7 @@
   width: 2.5em;
   border-radius: 999px;
   transform: translate(100%, 0%);
+  margin-right: 3rem;
 }
 
 .top-player {
